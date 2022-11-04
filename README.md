@@ -100,7 +100,7 @@ Functions using normal software-based PWMs, relying on `loop()` and calling `mil
 
 ### Currently supported Boards
 
-1. **SAM_DUE** boards**, using [`Arduino SAM core`](https://github.com/arduino/ArduinoCore-sam)
+1. **SAM_DUE** boards, using [`Arduino SAM core`](https://github.com/arduino/ArduinoCore-sam)
 
 
 ---
@@ -319,7 +319,7 @@ Actual data: pin = 6, PWM DC = 20.00, PWMPeriod = 200.00, PWM Freq (Hz) = 5000.0
 
 ### 2. PWM_Multi using Timer on SAM_DUE
 
-The following is the sample terminal output when running example [**PWM_Multi**](examples/PWM_Multi) on **SAM_DUE**, to demonstrate the ability to provide high PWM frequencies on multiple `PWM-capable` pins using **timer** for PWM
+The following is the sample terminal output when running example [**PWM_Multi**](examples/PWM_Multi) on **SAM_DUE**, to demonstrate the ability to provide high PWM frequencies on multiple `PWM-capable` pins using **Timer** for PWM
 
 ```
 Starting PWM_Multi using Timer on SAM_DUE
