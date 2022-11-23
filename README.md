@@ -165,7 +165,7 @@ Another way to install is to:
 
 Before using any PWM `Timer` and `channel`, you have to make sure the `Timer` and `channel` has not been used by any other purpose.
 
-```
+```cpp
 // SAM_DUE:
 // PWM pins: 6, 7, 8, 9
 // Timer pins: 2-5, 10-13. 
@@ -291,7 +291,7 @@ https://github.com/khoih-prog/SAMDUE_PWM/blob/a5ac09f989e8377b3ba14c68015edd1851
 The following is the sample terminal output when running example [PWM_DynamicDutyCycle](examples/PWM_DynamicDutyCycle) on **SAM_DUE**, to demonstrate the ability to provide high PWM frequencies and ability to change DutyCycle `on-the-fly` using **PWM**
 
 
-```
+```cpp
 Starting PWM_DynamicDutyCycle using PWM on SAM_DUE
 SAMDUE_PWM v1.0.0
 [PWM] setupPWM: _pin = 6 , _pinAttr = 12 , frequency = 5000 , _dutycycle = 0
@@ -339,7 +339,7 @@ Actual data: pin = 6, PWM DC = 20.00, PWMPeriod = 200.00, PWM Freq (Hz) = 5000.0
 
 The following is the sample terminal output when running example [**PWM_Multi**](examples/PWM_Multi) on **SAM_DUE**, to demonstrate the ability to provide high PWM frequencies on multiple `PWM-capable` pins using **Timer** for PWM
 
-```
+```cpp
 Starting PWM_Multi using Timer on SAM_DUE
 SAMDUE_PWM v1.0.0
 [PWM] setupPWM Timer: _pin = 2 , _pinAttr = 20 , frequency = 2000 , dutycycle = 2058
@@ -381,7 +381,7 @@ Actual data: pin = 11, PWM DC = 90.00, PWMPeriod = 125.00, PWM Freq (Hz) = 8000.
 
 The following is the sample terminal output when running example [**PWM_DynamicFreq**](examples/PWM_DynamicFreq) on **SAM_DUE**, to demonstrate the ability to change dynamically PWM frequencies using **Timer** for PWM
 
-```
+```cpp
 Starting PWM_DynamicFreq using Timer on SAM_DUE
 SAMDUE_PWM v1.0.0
 [PWM] setupPWM Timer: _pin = 5 , _pinAttr = 20 , frequency = 10000 , dutycycle = 2108
@@ -421,7 +421,7 @@ Actual data: pin = 5, PWM DC = 50.00, PWMPeriod = 50.00, PWM Freq (Hz) = 20000.0
 The following is the sample terminal output when running example [**PWM_Waveform**](examples/PWM_Waveform) on **SAM_DUE**, to demonstrate how to use the `setPWM_manual()` function in wafeform creation using **PWM**  for PWM
 
 
-```
+```cpp
 Starting PWM_Waveform using PWM on SAM_DUE
 SAMDUE_PWM v1.0.0
 [PWM] setupPWM: _pinAttr = 12 , frequency = 2000 , _dutycycle = 0
@@ -525,7 +525,7 @@ Actual data: pin = 6, PWM DutyCycle = 0.00, PWMPeriod = 500.00, PWM Freq (Hz) = 
 The following is the sample terminal output when running example [**PWM_Waveform**](examples/PWM_Waveform) on **SAM_DUE**, to demonstrate how to use the `setPWM_manual()` function in wafeform creation using **Timer**  for PWM
 
 
-```
+```cpp
 Starting PWM_Waveform using Timer on SAM_DUE
 SAMDUE_PWM v1.0.0
 [PWM] setupPWM Timer: _pin = 5 , _pinAttr = 20 , frequency = 2000 , dutycycle = 0
@@ -650,6 +650,6 @@ If you want to contribute to this project:
 
 ## Copyright
 
-Copyright 2022- Khoi Hoang
+Copyright (c) 2022- Khoi Hoang
 
 

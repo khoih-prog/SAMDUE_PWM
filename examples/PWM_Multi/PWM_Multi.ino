@@ -17,18 +17,18 @@
 
 // SAM_DUE:
 // PWM pins: 6, 7, 8, 9  ===> must be same frequency
-// Timer pins: 2-5, 10-13. 
+// Timer pins: 2-5, 10-13.
 // pin2:  TC0_CHA0, pin3:  TC2_CHA7, pin4:  TC2_CHB6, pin5:  TC2_CHA6
 // pin10: TC2_CHB7, pin11: TC2_CHA8, pin12: TC2_CHB8, pin13: TC0_CHB0
 
 #if USING_TIMER
-  // To select correct pins for different frequencies
-  uint32_t PWM_Pins[]   = { 2, 3, 5, 11 };
-  float frequency[] = { 2000.0f, 3000.0f, 4000.0f, 8000.0f };
+// To select correct pins for different frequencies
+uint32_t PWM_Pins[]   = { 2, 3, 5, 11 };
+float frequency[] = { 2000.0f, 3000.0f, 4000.0f, 8000.0f };
 #else
-  // always same frequency
-  uint32_t PWM_Pins[]   = { 6, 7, 8, 9 };
-  float frequency[] = { 2000.0f, 2000.0f, 2000.0f, 2000.0f };
+// always same frequency
+uint32_t PWM_Pins[]   = { 6, 7, 8, 9 };
+float frequency[] = { 2000.0f, 2000.0f, 2000.0f, 2000.0f };
 #endif
 
 #define NUM_OF_PINS   ( sizeof(PWM_Pins) / sizeof(uint32_t) )

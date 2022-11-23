@@ -17,14 +17,14 @@
 
 // SAM_DUE:
 // PWM pins: 6, 7, 8, 9
-// Timer pins: 2-5, 10-13. 
+// Timer pins: 2-5, 10-13.
 // pin2:   TC0_CHA0, pin3:  TC2_CHA7, pin4:  TC2_CHB6, pin5:  TC2_CHA6
 // pin 10: TC2_CHB7, pin11: TC2_CHA8, pin12: TC2_CHB8, pin13: TC0_CHB0
 
 #if USING_TIMER
-  uint32_t PWM_Pins[]   = { 2, 3, 4, 5 };
+uint32_t PWM_Pins[]   = { 2, 3, 4, 5 };
 #else
-  uint32_t PWM_Pins[]   = { 6, 7, 8, 9 };
+uint32_t PWM_Pins[]   = { 6, 7, 8, 9 };
 #endif
 
 #define NUM_OF_PINS       ( sizeof(PWM_Pins) / sizeof(uint32_t) )

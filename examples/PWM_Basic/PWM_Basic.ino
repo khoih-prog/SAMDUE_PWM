@@ -17,7 +17,7 @@
 
 // SAM_DUE:
 // PWM pins: 6, 7, 8, 9
-// Timer pins: 2-5, 10-13. 
+// Timer pins: 2-5, 10-13.
 // pin2:   TC0_CHA0, pin3:  TC2_CHA7, pin4:  TC2_CHB6, pin5:  TC2_CHA6
 // pin 10: TC2_CHB7, pin11: TC2_CHA8, pin12: TC2_CHB8, pin13: TC0_CHB0
 
@@ -57,7 +57,7 @@ void setup()
   if ( (!PWM_Instance) || !PWM_Instance->isPWMEnabled())
   {
     Serial.print(F("Stop here forever"));
-    
+
     while (true)
       delay(10000);
   }
