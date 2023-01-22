@@ -10,6 +10,7 @@
 <a href="https://www.buymeacoffee.com/khoihprog6" title="Donate to my libraries using BuyMeACoffee"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Donate to my libraries using BuyMeACoffee" style="height: 50px !important;width: 181px !important;" ></a>
 <a href="https://www.buymeacoffee.com/khoihprog6" title="Donate to my libraries using BuyMeACoffee"><img src="https://img.shields.io/badge/buy%20me%20a%20coffee-donate-orange.svg?logo=buy-me-a-coffee&logoColor=FFDD00" style="height: 20px !important;width: 200px !important;" ></a>
 
+
 ---
 ---
 
@@ -38,6 +39,7 @@
   * [ 5. PWM_Multi](examples/PWM_Multi)
   * [ 6. PWM_MultiChannel](examples/PWM_MultiChannel)
   * [ 7. PWM_Waveform](examples/PWM_Waveform)
+  * [ 8. PWM_StepperControl](examples/PWM_StepperControl) **New**
 * [Example PWM_Multi](#example-PWM_Multi)
 * [Debug Terminal Output Samples](#debug-terminal-output-samples)
   * [1. PWM_DynamicDutyCycle using PWM on SAM_DUE](#1-PWM_DynamicDutyCycle-using-PWM-on-SAM_DUE)
@@ -272,6 +274,7 @@ PWM_Instance->setPWM_manual(PWM_Pins, new_level);
  5. [PWM_Multi](examples/PWM_Multi)
  6. [PWM_MultiChannel](examples/PWM_MultiChannel)
  7. [PWM_Waveform](examples/PWM_Waveform)
+ 8. [PWM_StepperControl](examples/PWM_StepperControl) **New**
 
  
 ---
@@ -294,7 +297,7 @@ The following is the sample terminal output when running example [PWM_DynamicDut
 
 ```cpp
 Starting PWM_DynamicDutyCycle using PWM on SAM_DUE
-SAMDUE_PWM v1.0.0
+SAMDUE_PWM v1.0.1
 [PWM] setupPWM: _pin = 6 , _pinAttr = 12 , frequency = 5000 , _dutycycle = 0
 [PWM] setupPWM: Not PWMEnabled, PWMC_ConfigureClocks, frequency = 5000
 [PWM] setupPWM: new _pin = 6 , _channel = 7
@@ -342,7 +345,7 @@ The following is the sample terminal output when running example [**PWM_Multi**]
 
 ```cpp
 Starting PWM_Multi using Timer on SAM_DUE
-SAMDUE_PWM v1.0.0
+SAMDUE_PWM v1.0.1
 [PWM] setupPWM Timer: _pin = 2 , _pinAttr = 20 , frequency = 2000 , dutycycle = 2058
 [PWM] setupPWM new Timer, frequency = 2000
 [PWM] setupPWM Timer: _pin = 2 , _pinAttr = 20 , frequency = 2000 , dutycycle = 2058
@@ -384,7 +387,7 @@ The following is the sample terminal output when running example [**PWM_DynamicF
 
 ```cpp
 Starting PWM_DynamicFreq using Timer on SAM_DUE
-SAMDUE_PWM v1.0.0
+SAMDUE_PWM v1.0.1
 [PWM] setupPWM Timer: _pin = 5 , _pinAttr = 20 , frequency = 10000 , dutycycle = 2108
 [PWM] setupPWM new Timer, frequency = 10000
 =====================================================================================
@@ -424,7 +427,7 @@ The following is the sample terminal output when running example [**PWM_Waveform
 
 ```cpp
 Starting PWM_Waveform using PWM on SAM_DUE
-SAMDUE_PWM v1.0.0
+SAMDUE_PWM v1.0.1
 [PWM] setupPWM: _pinAttr = 12 , frequency = 2000 , _dutycycle = 0
 [PWM] setupPWM: Not PWMEnabled, PWMC_ConfigureClocks, frequency = 2000
 [PWM] setupPWM: new _pin = 6 , _channel = 7
@@ -528,7 +531,7 @@ The following is the sample terminal output when running example [**PWM_Waveform
 
 ```cpp
 Starting PWM_Waveform using Timer on SAM_DUE
-SAMDUE_PWM v1.0.0
+SAMDUE_PWM v1.0.1
 [PWM] setupPWM Timer: _pin = 5 , _pinAttr = 20 , frequency = 2000 , dutycycle = 0
 [PWM] setupPWM new Timer, frequency = 2000
 [PWM] setPWM: _dutycycle = 0 , frequency = 2000.00
@@ -622,6 +625,8 @@ Submit issues to: [SAMDUE_PWM issues](https://github.com/khoih-prog/SAMDUE_PWM/i
 ## DONE
 
  1. Basic hardware PWM-channels for **SAM_DUE boards** using [`Arduino SAM core`](https://github.com/arduino/ArduinoCore-sam)
+ 2. Add example [PWM_StepperControl](https://github.com/khoih-prog/SAMDUE_PWM/tree/main/examples/PWM_StepperControl) to demo how to control Stepper Motor using PWM
+ 
  
 ---
 ---
@@ -629,6 +634,15 @@ Submit issues to: [SAMDUE_PWM issues](https://github.com/khoih-prog/SAMDUE_PWM/i
 ### Contributions and Thanks
 
 Many thanks for everyone for bug reporting, new feature suggesting, testing and contributing to the development of this library.
+
+1. Thanks to [Paul van Dinther](https://github.com/dinther) for proposing new way to use PWM to drive Stepper-Motor in [Using PWM to step a stepper driver #16](https://github.com/khoih-prog/RP2040_PWM/issues/16), leading to v2.0.3
+
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/dinther"><img src="https://github.com/dinther.png" width="100px;" alt="dinther"/><br /><sub><b>Paul van Dinther</b></sub></a><br /></td>
+  </tr>
+</table>
 
 
 ---

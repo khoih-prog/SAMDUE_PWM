@@ -8,11 +8,12 @@
   Built by Khoi Hoang https://github.com/khoih-prog/SAMDUE_PWM
   Licensed under MIT license
 
-  Version: 1.0.0
+  Version: 1.0.1
 
   Version Modified By   Date      Comments
   ------- -----------  ---------- -----------
   1.0.0   K Hoang      04/11/2022 Initial coding for SAM_DUE boards
+  1.0.1   K Hoang      22/01/2023 Add `PWM_StepperControl` example
 *****************************************************************************************************************************/
 
 #pragma once
@@ -37,13 +38,13 @@
 #include "Arduino.h"
 
 #ifndef SAMDUE_PWM_VERSION
-  #define SAMDUE_PWM_VERSION             "SAMDUE_PWM v1.0.0"
+  #define SAMDUE_PWM_VERSION             "SAMDUE_PWM v1.0.1"
 
   #define SAMDUE_PWM_VERSION_MAJOR       1
   #define SAMDUE_PWM_VERSION_MINOR       0
-  #define SAMDUE_PWM_VERSION_PATCH       0
+  #define SAMDUE_PWM_VERSION_PATCH       1
 
-  #define SAMDUE_PWM_VERSION_INT         1000000
+  #define SAMDUE_PWM_VERSION_INT         1000001
 #endif
 
 #include "PWM_Generic_Debug.h"
